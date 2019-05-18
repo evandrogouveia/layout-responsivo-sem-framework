@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+/*=========== HEADER ==========*/
+.titulo-banner{
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	text-align: center;
+	padding-top: 25px;
+}
+.titulo-banner h1 {
+	font-size: 50px;
+	color: #546130;
+	margin-bottom: 0;
+}
+.titulo-banner span {
+	font-weight: bold;
+	font-size: 20px;
+	color: #2d3b09;
+}
+.titulo-banner a {
+	margin-top: 30px;
+	display: block;
+}
+.banner{
+	width: 100%;
+	text-align: center;
+}
+.owl-dots{
+	background: rgba(50,50,50,0.7);
+	padding: 18px 0;
+	position: relative;
+	top: -81px;
+}
+.owl-theme .owl-dots .owl-dot{
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	width: 45px;
+	height: 45px;
+	margin-left: 5px;
+	margin-right: 5px;
+	background: #fff;
+	border:7px solid #343434;
+	outline: none;
+}
+.owl-theme .owl-dots .owl-dot.active{
+	background: #546130;
+	border-color: #fff;
+}
+
+/*=========== SECTION BACKGROUND-1 ==========*/
+.background-1{
+	width: 100%;
+	background: #454545;
+	margin-top: -82px;
+	padding: 50px 0;
+}
+.slide{
+	width: 70%;
+	margin: 0 auto;
+}
+.owl-carousel .owl-nav button.owl-prev{
+	left: -70px;
+	top: 110px;
+	position: absolute;
+}
+.owl-carousel .owl-nav button.owl-next{
+	right: -70px;
+	top: 110px;
+	position: absolute;
+}
+.owl-slide .item .imagem{
+	border: 10px solid #6f6f6f;
+	
+}
+.owl-slide .item{
+	color: #fff;
+}
+
+.owl-theme{
+	text-align: center;
+}
+
+/*=========== SECTION BACKGROUND-2 ==========*/
+.background-2{
+	width: 100%;
+	background: #6f6f6f;
+	text-align: center;
+	margin-top: 0;
+	padding: 30px 0;
+}
+.img-round{
+	width: 40%;
+	display: inline-block;
+}
+.img-round img{
+	height: 400px;
+	width: 400px;
+	object-fit: cover;
+	border-radius: 50%;  
+	border:20px solid #343434;
+}
+.textos-right{
+	padding-top: 30px;
+	width: 40%;
+	color: #fff;
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+}
+.textos-right h2{
+	font-size: 40px;
+	margin: 0;
+}
+
+/*=========== SECTION BACKGROUND-3 ==========*/
+.background-3{
+	width: 100%;
+	background: #bebebe;
+	margin-top: 0;
+	padding: 50px 0;
+}
+.accordion-container{
+	position: relative;
+	max-width: 80%;
+	height: auto;
+	margin: 10px auto;
+}
+.panel{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #6f6f6f;
+
+}
+.panel:first-child{
+	border-radius: 10px 10px 0px 0px;
+}
+.panel:last-child{
+	border-radius: 0px 0px 10px 10px;
+}
+.panel > h2{
+	margin: 0;
+	padding: 25px;
+	font-size: 22px;
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+	font-weight: 600;
+	border-bottom: 1px solid #ddd;
+	-webkit-transition:all 0.2s linear;
+	-moz-transition:all 0.2s linear;
+	transition:all 0.2s linear;
+}
+#last-h2{
+	border-bottom: none;
+}
+.panel > h2 i{
+	float: right;
+	margin-top: 2px;
+	font-size: 30px;
+}
+.panel > h2.active{
+	background-color:#fff;
+	color: #6f6f6f;
+	border:none;
+}
+.content{
+	background-color: #fff;
+	border-bottom: 1px solid #ddd;
+	display:none;
+	padding: 15px 25px;
+}
+.box {
+	width: 100%;
+	display: inline-block;
+}
+.content p{
+	padding: 10px 15px;
+	margin: 0;
+	color: #333;
+	width: 95%;
+	margin-top: 70px;
+}
+.content img{
+	width: 300px;
+	height: 200px;
+	float: left;
+	border:10px solid #6f6f6f;
+	margin-right: 30px;
+}
+
+/*=========== SECTION BACKGROUND-4 ==========*/
+.background-4{
+	background: #6f6f6f;
+	width: 100%;
+}
+.background-forma{
+	background: url('../img/retangulo.png') center center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+}
+.background-forma form{
+	width: 80%;
+	margin:0 auto;
+	padding: 30px 0;
+}
+form label{
+	position: absolute;
+	margin-top: 30px;
+	margin-left: 20px;
+	font-weight: bold;
+}
+label.error { 
+	position: absolute;
+	margin-top: -10px;
+	left: 10%;
+	color: red; 
+	font-size: 15px 
+}
+#telefone-error{
+	left: 50%;
+	margin-top: 71px;
+}
+form input, form textarea{
+	padding: 20px 0px;
+	margin: 10px 0;
+	font-size: 18px;
+	border:none;
+	padding-left: 80px;
+	background-color: #bebebe;
+	border-radius: 10px;
+	outline: none;
+	display: inline-block;
+}
+.form-inputs{
+	width: 100%;
+	text-align: center;
+}
+#form-input-email{
+	width: 49%;
+	float: left;
+}
+#form-input-telefone{
+	width: 49%;
+	float: right;
+	
+}
+#form-input-mensagem{
+	float: left;
+}
+input#nome{
+	width: 93%;
+}
+input#email{
+	width: 86%;
+}
+input#telefone{
+	width: 82%;
+	padding-left: 100px;
+}
+form textarea{
+	width: 89.5%;
+	padding-left: 120px;
+}
+textarea::placeholder{
+	font-family: 'Roboto', sans-serif; 
+}
+#form-input-btn button{
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #fff;
+	padding: 23px 30px 17px;
+	border-radius: 10px;
+	border:none;
+	cursor: pointer;
+	margin-top: 15px;
+	width: 14%;
+}
+#form-input-btn button:hover{
+	background-color: #bebebe;
+}
+#body-panel, #panel {
+	padding: 5px;
+	text-align: center;
+	background-color: #e5eecc;
+	border: solid 1px #c3c3c3;
+}
+#body-panel {
+	padding: 50px;
+	display: none;
+}
+
+/*=========== FOOTER ==========*/
+footer{
+	text-align: center;
+	background-color: #343434;
+	color: #fff;
+	padding: 18px;
+}
+
+
+/*=========== RESPONSIVO ==========*/
+@media screen and (max-width: 576px){
+	.titulo-banner{
+		background-color: #454545;
+		padding-top: 0;
+		width: 100%;
+	}
+	.titulo-banner h1, 
+	.titulo-banner span {
+		color: #fff;
+		margin: 5px;
+	}
+	.titulo-banner h1{
+		font-size: 35px;
+	}
+	.titulo-banner span {
+		font-weight: 100;
+		font-size: 17px;
+		width: 60%;
+		display: block;
+		margin: 0 auto;
+	}
+	.titulo-banner a{
+		position: absolute;
+		margin: 10px auto;
+		left: 47%;
+
+	}
+	.owl-banner{
+		top: 110px;
+	}
+	.owl-dots{
+		top: -40px;
+		padding: 5px 0;
+	}
+	.owl-theme .owl-dots .owl-dot{
+		border:4px solid #343434;
+		width: 30px;
+		height: 30px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	.background-1{
+		margin-top: 35px;
+	}
+	.background-2{
+		padding:15px 0;
+	}
+	.background-3{
+		padding:18px 0;
+	}
+	.slide{
+		width: 90%;
+	}
+	.owl-carousel .owl-nav button.owl-prev{
+		left: -20px;
+		top: 25px;
+		position: relative;
+		outline: none;
+	}
+	.owl-carousel .owl-nav button.owl-next{
+		right: -20px;
+		top: 25px;
+		position: relative;
+		outline: none;
+	}
+	.img-round{
+		width: 100%;
+		text-align: center;
+	}
+	.img-round img{
+		width: 300px;
+		height:300px;
+		border: 15px solid #343434;
+	}
+	.textos-right{
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	.textos-right p{
+		padding: 0 13px;
+	}
+	.accordion-container{
+		max-width: 93%;
+	}
+	.content{
+		padding: 0;
+		text-align: center;
+	}
+	.box{
+		width: 90%;
+	}
+	.content img{
+		width: 94%;
+		margin-bottom: 15px;
+	}
+	.background-forma form{
+		width: 90%;
+		overflow: auto;
+	}
+	.form-inputs{
+		width: 100%;
+	}
+	#form-input-email{
+		width: 100%;
+		float: none;
+	}
+	#form-input-telefone{
+		width: 100%;
+		float: none;
+	}
+	input#nome, input#email{
+		width: 75%;
+	}
+	input#telefone{
+		width: 68%;
+	}
+	form textarea{
+		width: 61.5%;
+	}
+	#form-input-btn button{
+		width: 63%
+	}
+	label.error { 
+		position: relative;
+		margin-top: -10px;
+		left: 0;
+		color: red; 
+		font-size: 15px 
+	}
+	#telefone-error{
+		left: 0;
+		margin-top: -10px;
+	}
+
+}
